@@ -1,6 +1,6 @@
 /*******************************************************/
-/*      Author  :   Mohamed Ashraf Mohamed                    */
-/*      SWC     :   NVIC                               */
+/*      Author  :   Mohamed Ashraf Mohamed                */
+/*      SWC     :   NVIC_config.h                        */
 /*      Date    :   7/10/2023                           */
 /*      version :       1.00                           */
 /*******************************************************/

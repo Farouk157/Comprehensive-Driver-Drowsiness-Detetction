@@ -1,6 +1,6 @@
 /*******************************************************/
-/*      Author  :   Mohamed Ashraf Mohamed                    */
-/*      SWC     :   NVIC                               */
+/*      Author  :   Mohamed Ashraf Mohamed                */
+/*      SWC     :   NVIC_program.c                       */
 /*      Date    :   7/10/2023                           */
 /*      version :       1.00                           */
 /*******************************************************/
@@ -26,8 +26,6 @@ void NVIC_voidEnablePeripheral	(u8 Copy_u8IntID)
 	NVIC ->ISER[Copy_u8IntID / 32] = 1 << (Copy_u8IntID %32);
 }
 
-
-
 /**
  * @brief   If a pending interrupt is Disable , the NVIC activates the interrupt based on its priority.
  * @param   NUM OF interrupt
@@ -38,9 +36,6 @@ void NVIC_voidDisablePeripheral	(u8 Copy_u8IntID)
 	NVIC ->ICER[Copy_u8IntID / 32] = 1 << (Copy_u8IntID %32);
 
 }
-
-
-
 
 /**
  * @brief   set a flag means interrupt that is pending has no effect.
@@ -53,7 +48,6 @@ void NVIC_voidSetPendingFlag	(u8 Copy_u8IntID)
 	NVIC ->ISPR[Copy_u8IntID / 32] = 1 << (Copy_u8IntID %32);
 
 }
-
 
 /**
  * @brief   Removes the pending state of an interrupt

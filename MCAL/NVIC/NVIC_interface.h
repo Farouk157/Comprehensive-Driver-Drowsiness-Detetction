@@ -1,6 +1,6 @@
 /*******************************************************/
-/*      Author  :   Mohamed Ashraf Mohamed                    */
-/*      SWC     :   NVIC                               */
+/*      Author  :   Mohamed Ashraf Mohamed                */
+/*      SWC     :   NVIC_interface.h                     */
 /*      Date    :   7/10/2023                           */
 /*      version :       1.00                           */
 /*******************************************************/
@@ -29,14 +29,43 @@
 #define WWDG			0
 #define EXTI16			1
 
+/**
+ * @brief   If a pending interrupt is enabled, the NVIC activates the interrupt based on its priority.
+ * @param   NUM OF interrupt
+ * @retval  none
+ */
+
 void NVIC_voidEnablePeripheral	(u8 Copy_u8IntID);
+
+/**
+ * @brief   If a pending interrupt is Disable , the NVIC activates the interrupt based on its priority.
+ * @param   NUM OF interrupt
+ * @retval  none
+ */
 
 void NVIC_voidDisablePeripheral	(u8 Copy_u8IntID);
 
+/**
+ * @brief   set a flag means interrupt that is pending has no effect.
+ * @param   NUM OF flag
+ * @retval  none
+ */
 
 void NVIC_voidSetPendingFlag	(u8 Copy_u8IntID);
 
+/**
+ * @brief   Removes the pending state of an interrupt
+ * @param   NUM OF flag
+ * @retval  none
+ */
+
 void NVIC_voidClearPendingFlag	(u8 Copy_u8IntID);
+
+/**
+ * @brief   Removes the pending state of an interrupt
+ * @param   NUM OF flag
+ * @retval  return active flag (interrupt)
+ */
 
 u8 NVIC_u8GetActive	(u8 Copy_u8IntID);
 
