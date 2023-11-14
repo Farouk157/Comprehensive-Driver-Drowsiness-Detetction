@@ -19,9 +19,9 @@ This project is primarily aimed at reducing the number of road accidents by focu
           - Push Button
 
 ### For the Raspberry pi and Camera 
-    - You will find here the code of raspberry pi and camera which is written and devoloped in python, with the model we have used and   our algorithm for camera was mainly depends on the (68-Face Landmarks),dlib, Convex Hull with computer vision to detect and predict       the euclidean distance of the 6 points ofeach eye 
+    - You will find here the code of raspberry pi and camera which is written and devoloped in python, with the model used and the Algorithm for the Camera was mainly depends on the (68-Face Landmarks),dlib, Convex Hull with computer vision to detect and predict the euclidean distance of the 6 points of each eye. 
 ### For The STM32F401CCU6  
-    - You will also find here the drivers of the STM32F401CCU6 Microcontroller that are used in the project and the drivers for th   electronics and components used.
+    - You will also find here the drivers of the STM32F401CCU6 Microcontroller that are used in the project and the drivers for the electronics and components used.
 #### For the Main Algorithm
     - It's a hyper Algorithm that means it's a combination of Event Triggering and Time Triggering alogrithm and that to make sure to get the highest Determinism and Responsiveness to the system. 
     - The Camera and RPi are connected to the STM32 through the UART communication protocol and if the camera detected any drowsiness the RPi will send data to the STM32 and once STM32 receives these data in its UART the interrupt of UART being fired and turnning on          the Alarm system.
