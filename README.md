@@ -19,14 +19,13 @@ This project is primarily aimed at reducing the number of road accidents by focu
           - Push Button
 
 ### Description of the system 
-    - You will find here the code of raspberry pi and camera which is written and devoloped in python, with the model we have used and          our algorithm for camera was mainly depends on the (68-Face Landmarks),dlib, Convex Hull with computer vision to detect and predict       the euclidean distance of the 6 points ofeach eye 
-    - You will also find here the drivers of the STM32F401CCU6 Microcontroller that are used in the project and the drivers for the             electronics and components used. 
-    #### For The main Algorithm 
-    - It's a hyper Algorithm that means it's a combination of Event Triggering and Time Triggering alogrithm and that to make sure to           get the highest Determinism and Responsiveness to the system 
-    - The Camera and RPi are connected to the STM32 through the UART communication protocol and if the camera detected any drowsiness the 
-      RPi will send data to the STM32 and once STM32 receives these data in its UART the interrupt of UART being fired and turnning on          the Alarm system
-    - On the other hand the STM32 is looping on the FSR which is attached to the steering wheel to detect the grip strength of the driver       on the steering wheel if his pressure was lower than the THRESHOLD so the turning on warning system function will be executed.
-    - Inside the warning system or alerting system we set the SYSTICK timer for 5 seconds if the driver didn't respond to the alerting          system by pressing the push button after the 5 second the interrupt of the SYSTICK will be fired and inside its ISR it will               activate the GSM and GPS to send warning message and location of the vehicle to the emergency road and services.
+    - You will find here the code of raspberry pi and camera which is written and devoloped in python, with the model we have used and   our algorithm for camera was mainly depends on the (68-Face Landmarks),dlib, Convex Hull with computer vision to detect and predict       the euclidean distance of the 6 points ofeach eye 
+    - You will also find here the drivers of the STM32F401CCU6 Microcontroller that are used in the project and the drivers for th electronics and components used. 
+##### For The main Algorithm 
+    - It's a hyper Algorithm that means it's a combination of Event Triggering and Time Triggering alogrithm and that to make sure to get the highest Determinism and Responsiveness to the system. 
+    - The Camera and RPi are connected to the STM32 through the UART communication protocol and if the camera detected any drowsiness the RPi will send data to the STM32 and once STM32 receives these data in its UART the interrupt of UART being fired and turnning on          the Alarm system.
+    - On the other hand the STM32 is looping on the FSR which is attached to the steering wheel to detect the grip strength of the driver on the steering wheel if his pressure was lower than the THRESHOLD so the turning on warning system function will be executed.
+    - Inside the warning system or alerting system we set the SYSTICK timer for 5 seconds if the driver didn't respond to the alerting system by pressing the push button after the 5 second the interrupt of the SYSTICK will be fired and inside its ISR it will               activate the GSM and GPS to send warning message and location of the vehicle to the emergency road and services.
 
 
 
