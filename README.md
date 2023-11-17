@@ -1,7 +1,7 @@
 # Comprehinesive Driver Drowsiness Detetction
 
 ## Project main goal and outcome
-- This project is primarily aimed at reducing the number of road accidents by focusing on the detection of driver drowsiness. It recognizes that drowsy driving is a major contributor to accidents and aims to mitigate this risk. By alerting the driver when they are in a drowsy state, the project seeks to raise awareness and prompt the driver to take necessary actions to prevent accidents. The impact of this project is significant as it directly addresses a leading cause of road accidents, potentially saving lives and reducing injuries on the road.
+- This project is primarily aimed at reducing the number of road accidents by focusing on the detection of driver drowsiness. It recognizes that drowsy driving is a major contributor to accidents and aims to mitigate this risk. By alerting the drivers when they are in a drowsy state, the project seeks to raise awareness and prompt the driver to take necessary actions to prevent accidents. The impact of this project is significant as it directly addresses a leading cause of road accidents, potentially saving lives and reducing injuries on the road.
 
 ## Features 
     1- driver drowsy state detection through both:
