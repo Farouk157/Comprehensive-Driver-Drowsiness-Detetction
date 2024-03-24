@@ -26,7 +26,10 @@
     - It's a hyper Algorithm that means it's a combination of Event Triggering and Time Triggering alogrithm and that to make sure to get the highest Determinism and Responsiveness to the system. 
     - The Camera and RPi are connected to the STM32 through the UART communication protocol and if the camera detected any drowsiness the RPi will send data to the STM32 and once STM32 receives these data in its UART the interrupt of UART being fired and turnning on the Alarm system.
     - On the other hand the STM32 is looping on the FSR which is attached to the steering wheel to detect the grip strength of the driver on the steering wheel if his pressure was lower than the THRESHOLD so the turning on warning system function will be executed.
-    - Inside the warning system or alerting system we set the SYSTICK timer for 5 seconds if the driver didn't respond to the alerting system by pressing the push button after the 5 second the interrupt of the SYSTICK will be fired and inside its ISR it will activate the GSM and GPS to send warning message and location of the vehicle to the emergency road and services.
+    - Inside the warning system or alerting system we set the SYSTICK timer for 5 seconds if the driver didn't respond to the alerting system by pressing the push button after the 5 second the interrupt of the SYSTICK will be fired and inside its ISR it will activate the GSM and GPS to send warning message and location of the vehicle to the emergency road and services.  
+
+## Link to the project VIDEO on Youtube
+https://www.youtube.com/watch?v=D6is6qiDIQo
 
 
 
